@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/方案項目/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="LogicFlow/LogicFlow.vcxproj" Id="877cf035-202d-45d0-a6d5-b1b1e1f819d7" />
+</Solution>
