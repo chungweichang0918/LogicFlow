@@ -32,7 +32,6 @@ LogicFlow/
 ├── adder_4bit.cir         # 4-bit 漣波進位加法器
 ├── mux_2to1.cir           # 2-to-1 多工器
 ├── test_circuit.cir       # 全閘種測試電路
-└── circuits/              # 範例電路備份
 ```
 
 ## 編譯與執行
