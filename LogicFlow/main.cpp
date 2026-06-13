@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <memory>
 #include <limits>
@@ -15,7 +15,7 @@
 
 using namespace std;
 
-// Component::verbose 的定義 (宣告在 Component.h)。整個專案只能定義一次，放在 main.cpp 最合適。
+// Component::verbose 的定義 (宣告在 Component.h)。
 bool Component::verbose = true;
 
 // 安全讀取整數：遇到非數字輸入時清除錯誤旗標並回傳 false，避免選單陷入無限迴圈。
