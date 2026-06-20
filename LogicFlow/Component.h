@@ -40,6 +40,7 @@ public:
     bool getIsOutput() const { return isOutput; }
 
     virtual void addInput(Component* a) {
+        // 任何子類別都能接收無限個輸入
         inputs.push_back(a);
     }
 

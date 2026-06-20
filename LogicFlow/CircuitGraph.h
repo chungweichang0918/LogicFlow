@@ -74,7 +74,16 @@ public:
         return true;
     }
 
-    // 將指定元件標記為「輸出」，影響模擬結果的顯示 (取代寫死 SUM / COUT 字串)
+    bool connect(Component* from, Component* to) {
+        if (from == nullptr || to == nullptr) {
+			throw CircuitException("接線失敗：來源或目標元件為 nullptr");
+        }
+		to->addInput(from);
+		cout << "[系統] 成功將 [" << from->getname() << "] 接線至 [" << to->getname() << "]\n";
+        return true;
+    }
+
+    // 將指定元件標記為「輸出」，影響模擬結果的顯示
     bool markOutput(const string& name) {
         Component* comp = findComponent(name);
         if (comp == nullptr) {
